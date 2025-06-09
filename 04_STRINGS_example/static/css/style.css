@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    margin: 10px;
+    background-color: #ffe4ea;
+    border-radius: 10px;
+    border: 2px dotted #cb4c46;
+    text-align: center;
+    padding: 5px;
+}
+
+button {
+    font-family: "Rubik Bubbles", system-ui;
+    background-color: #ff8478;
+    border-radius: 10px;
+    border: 2px solid #960018;
+    padding: 3px 5px;
+    margin: 5px;
+    font-size: 20px;
+    color: #960018;
+}
+
+h1 {
+    font-family: "Rubik Bubbles", system-ui;
+    color: #960018;
+    text-decoration: underline;
+    font-size: 40px;
+    margin: 5px;
+}
+
+p {
+    font-family: "Alumni Sans SC", sans-serif;
+    color: #670010;
+    font-size: 30px;
+    margin: 5px;
+}
