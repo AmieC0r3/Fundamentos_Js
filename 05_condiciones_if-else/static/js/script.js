@@ -36,9 +36,9 @@ function valPassword() {
 function paImp() {
     let num = parseInt(prompt("enter number: "));
 
-    if (num%2==0) {
+    if (num % 2 == 0) {
         alert("par");
-    } else if(num%2!==0){
+    } else if (num % 2 !== 0) {
         alert("impar");
     } else {
         alert("Please enter a valid value");
@@ -49,13 +49,14 @@ function paImp() {
 muestra “Hace calor”, de lo contrario muestra “Clima agradable”.*/
 
 function temp() {
-    let temperatura = "30";
     let tempActual = parseInt(prompt("enter temperature: "));
 
-    if (tempActual <= temperatura) {
+    if (tempActual >= 15 && tempActual < 30) {
         alert("Pleasant weather");
-    } else if(tempActual >= temperatura){
+    } else if (tempActual >= 30 && tempActual < 50) {
         alert("It's hot");
+    } else if (tempActual >= -5 && tempActual < 15) {
+        alert("It's cold");
     } else {
         alert("Please enter a valid value");
     }
@@ -63,3 +64,102 @@ function temp() {
 
 /*Comparar dos números: Solicita dos números al usuario.
 Compara ambos y muestra cuál es mayor o si son iguales.*/
+
+function compNum() {
+    let num1 = parseInt(prompt("enter number one: "));
+    let num2 = parseInt(prompt("enter number two: "));
+
+    if (num1 < num2) {
+        alert("The number " + num1 + " is less than the number " + num2);
+    } else if (num2 < num1) {
+        alert("The number " + num2 + " is less than the number " + num1);
+    } else if (num2 == num1) {
+        alert("The number " + num1 + " and the number " + num2 + " are the same.");
+    } else {
+        alert("Please enter a valid value");
+    }
+};
+
+/*Calificación escolar: Pide una nota entre 1 y 7. Si es 4 o más,
+muestra “Aprobado”, si es menor, muestra “Reprobado”. */
+
+function note() {
+    let nIng = parseInt(prompt("enter grade: "));
+
+    if (nIng <= 4) {
+        alert("disapproved");
+    } else if (nIng >= 4 && nIng <= 7) {
+        alert("approved");
+    } else {
+        alert("Please enter a valid value");
+    }
+};
+
+/* Nombre de usuario válido: Pide un nombre de usuario. Si el valor ingresado es "admin",
+muestra “Bienvenido,administrador”. Si no, muestra “Usuario no reconocido”. */
+
+function user() {
+    let name = "admin"; //contraseña con comillas porque no hay operacion
+    let pass = prompt("enter password: ");
+
+    if (pass == name) {
+        alert("allowed access :)");
+    } else {
+        alert("sorry access denied >:(");
+    }
+};
+
+/* Verificar si una palabra empieza con "A": Pide una palabra al usuario. Verifica
+si empieza con la letra “A” mayúscula y muestra un mensaje acorde. */
+
+function word() {
+    let pal = prompt("enter any word");
+    let a = pal[0];
+
+    if (a == "A" || a == "a") {
+        alert("congratulations starts with a");
+    } else if (a !== "A" || a !== "a") {
+        alert("sorry doesn't start with a");
+    } else {
+        alert("Please enter a valid value");
+    }
+};
+
+/* Precio con descuento: Solicita el precio de un producto. Si el precio es mayor a 10000,
+muestra que aplica descuento. Si no, indica precio normal. */
+
+function cost() {
+    let price = 10000;
+    let prod = parseInt(prompt("enter price for a discount!!"));
+
+    if (prod <= price) {
+        alert("Sorry, you don't have a discount... ლ(ಥ益ಥლ)");
+    } else if (prod >= price) {
+        alert("Congratulations, you have a discount!! (つ⁎ᵕᴗᵕ⁎)つ");
+    } else {
+        alert("Please enter a valid value");
+    }
+};
+
+/* Verificar si una persona puede conducir: Solicita la edad del usuario y
+si tiene licencia (por ejemplo, respondiendo "sí" o "no"). Si tiene 18 o más y
+respondió que tiene licencia, muestra “Puede conducir”. Si no, muestra “No puede conducir”. */
+
+function manejar() {
+    let age = parseInt(prompt("enter your age: "));
+    let lic = prompt("you have a license?? (yes or no): ");
+
+    if (age >= 18 && lic == "yes") {
+        alert("Congratulations!! you can drive!!");
+    } else if (age >= 18 && lic == "no") {
+        alert("If you drive you may have problems, better not do it.");
+    } else if (age <= 18 && lic == "yes") {
+        alert("If you drive you may have problems, better not do it, and... how do you have a license?");
+    } else if (age <= 18 && lic == "no") {
+        alert("Did you really think about it?");
+    } else if (lic !== "yes" && lic !== "no") {
+        alert("Please enter a valid value");
+    } else {
+        alert("Please enter a valid value");
+    }
+};
