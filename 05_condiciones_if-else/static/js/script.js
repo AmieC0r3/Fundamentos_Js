@@ -163,3 +163,8 @@ function manejar() {
         alert("Please enter a valid value");
     }
 };
+
+
+function cerca(){
+    alert ("Sorry you were electrocuted.  (ó﹏ò｡)")
+}
