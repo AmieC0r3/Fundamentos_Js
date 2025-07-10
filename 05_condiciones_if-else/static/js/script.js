@@ -129,11 +129,14 @@ function word() {
 muestra que aplica descuento. Si no, indica precio normal. */
 
 function cost() {
+    let iva= 0.19;
+    let desc= parsefloat(parseInt(prompt("enter price of the discount (example: 20%)")));
+    desc /= 100;
     let price = 10000;
-    let prod = parseInt(prompt("enter price for a discount!!"));
+    let prod = parsefloat(parseInt(prompt("enter price for a discount!!")));
 
     if (prod <= price) {
-        alert("Sorry, you don't have a discount... ლ(ಥ益ಥლ)");
+        alert('El valor ingresado fue: ${prod}\n IVA');
     } else if (prod >= price) {
         alert("Congratulations, you have a discount!! (つ⁎ᵕᴗᵕ⁎)つ");
     } else {
