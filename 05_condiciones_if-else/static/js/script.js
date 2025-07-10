@@ -129,7 +129,7 @@ function word() {
 muestra que aplica descuento. Si no, indica precio normal. */
 
 function cost() {
-    let iva= 0.19;
+    const iva= 0.19;
     let desc= parsefloat(parseInt(prompt("enter price of the discount (example: 20%)")));
     desc /= 100;
     let price = 10000;
