@@ -129,8 +129,7 @@ function word() {
 muestra que aplica descuento. Si no, indica precio normal. */
 
 function cost() {
-    const iva= 0.19;
-    let desc= parsefloat(parseInt(prompt("enter price of the discount (example: 20%)")));
+    let desc = parsefloat(parseInt(prompt("enter price of the discount (example: 20%)")));
     desc /= 100;
     let price = 10000;
     let prod = parsefloat(parseInt(prompt("enter price for a discount!!")));
@@ -148,7 +147,7 @@ function cost() {
 si tiene licencia (por ejemplo, respondiendo "sí" o "no"). Si tiene 18 o más y
 respondió que tiene licencia, muestra “Puede conducir”. Si no, muestra “No puede conducir”. */
 
-function manejar() {
+/*function manejar() {
     let age = parseInt(prompt("enter your age: "));
     let lic = prompt("you have a license?? (yes or no): ");
 
@@ -162,12 +161,31 @@ function manejar() {
         alert("Did you really think about it?");
     } else if (lic !== "yes" && lic !== "no") {
         alert("Please enter a valid value");
-    } else {
+    } else if( age > 100) {
+        alert ("are you sure??");
+    }else {
         alert("Please enter a valid value");
     }
-};
+};  */
 
+function manejar() {
+    let age = parseInt(prompt("enter your age: "));
+
+    if (age > 18 && age < 100) {
+        let lic = prompt("you have a license?? (yes or no): ");
+
+        if (lic == "yes" || "YES" || "Yes") {
+            alert("Congratulations!! you can drive!!");
+        } else if (lic == "no" || "NO" || "No") {
+            alert("If you drive you may have problems, better not do it.");
+        } else if (lic !== "yes" && lic !== "no") {
+            alert("Please enter a valid value");
+        } else {
+            alert("Please enter a valid value");
+        }
+    }
+}
 
 function cerca(){
-    alert ("Sorry you were electrocuted.  (ó﹏ò｡)")
+    alert("sorry you were electrocuted")
 }
