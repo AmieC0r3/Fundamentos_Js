@@ -189,5 +189,5 @@ function manejar() {
 }
 
 function cerca() {
-    alert("sorry you were electrocuted")
+    alert("sorry you were electrocuted"); 
 }

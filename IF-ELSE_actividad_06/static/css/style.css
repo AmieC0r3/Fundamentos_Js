@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 10px;
+    font-family: "Walter Turncoat", cursive;
+}
+
+.botones {
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px dashed;
+    font-family: "Homemade Apple", cursive;
+}

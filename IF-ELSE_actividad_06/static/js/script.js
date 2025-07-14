@@ -13,15 +13,18 @@ function fraseJS() {
 y muestra cuál es más larga o si tienen el mismo largo. */
 
 function pala() {
-    let pal = prompt("ingresa una palabra:");
-    let fa = prompt("ingresa otra palabra:");
+    let pal1 = prompt("ingresa una palabra:");
+    let pal2 = prompt("ingresa otra palabra:");
 
-    if (pal.length > fa.length) {
-        alert("la primera palabra es mas larga");
-    } else if (pal.length < fa.length) {
-        alert("la segunda palabra es mas larga");
-    } else {
-        alert("ingrese un valor valido");
+    if (pal1.length > pal2.length) {
+        alert(`la palabra mas larga es ${pal1} con ${pal1.length}`);
+    } else if (pal1.length < pal2.length) {
+        alert(`la palabra mas larga es ${pal2} con ${pal2.length}`);
+    } else if (pal1.length == pal2.length){
+        alert(`tanto ${pal1} y ${pal2} tienen el mismo largo con:\n
+            ${pal1.length} caracteres`);
+    } else{
+        alert ("por favor ingrese un valor valido");
     };
 }
 
@@ -31,10 +34,10 @@ muestra "Correo válido", si no, "Correo inválido". */
 function correo() {
     let email = prompt("por favor ingrese un email")
 
-    if (email.includes("@")) {
+    if (email.includes("@gmail.com")) {
         alert("correo valido");
     } else {
-        alert("ingrese un valor valido");
+        alert("por favor ingrese un correo valido");
     };
 }
 
