@@ -174,18 +174,20 @@ function manejar() {
     if (age > 18 && age < 100) {
         let lic = prompt("you have a license?? (yes or no): ");
 
-        if (lic == "yes" || "YES" || "Yes") {
+        if (lic == "yes") {
             alert("Congratulations!! you can drive!!");
-        } else if (lic == "no" || "NO" || "No") {
+        } else if (lic == "no") {
             alert("If you drive you may have problems, better not do it.");
         } else if (lic !== "yes" && lic !== "no") {
             alert("Please enter a valid value");
         } else {
             alert("Please enter a valid value");
         }
+    } else {
+        alert("Please enter a valid value");
     }
 }
 
-function cerca(){
+function cerca() {
     alert("sorry you were electrocuted")
 }
