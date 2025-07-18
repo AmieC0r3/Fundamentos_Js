@@ -8,11 +8,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #dfffb1;
 }
 
 h1 {
     margin: 10px;
     font-family: "Walter Turncoat", cursive;
+    color: #ae85e6;
 }
 
 .botones {
@@ -20,4 +22,13 @@ h1 {
     border-radius: 20px;
     border: 2px dashed;
     font-family: "Homemade Apple", cursive;
+    background-color: #cba8fc;
+}
+
+button {
+    background-color: #bde685;
+    color:#70983d;
+    border-radius: 10px;
+    border: 2px solid #70983d;
+    padding: 3px 5px;
 }
