@@ -1,14 +1,3 @@
-/*  Pide al usuario que escriba una frase cualquiera. Luego, verifica si esa frase contiene 
-la palabra "javascript" (en minúsculas, exactamente así escrita).*/
-
-function fraseJS() {
-    let frase = prompt("ingresa una frase:");
-
-    if (frase === "javascript") {
-        alert("estas hablando de javascript!!")
-    }
-}
-
 /* Solicita dos palabras con prompt(). Compara cuántas letras tiene cada una 
 y muestra cuál es más larga o si tienen el mismo largo. */
 
@@ -62,14 +51,14 @@ function nume() {
 "Buenas tardes", y si es mayor a 18, "Buenas noches".*/
 
 function hi() {
-    let sal = parseInt(prompt("que hora es?"));
+    let sal = parseInt(prompt("Tu sabes que hora es?  ❤︎"));
 
     if (sal < 12) {
-        alert("good morning");
+        alert("good morning ꒰ᐢ.   ̫ .ᐢ꒱");
     } else if (sal >= 12 && sal < 18) {
-        alert("good afternoon");
+        alert("good afternoon ᕙ( •̀ ᗜ •́ )ᕗ");
     } else if (sal >= 18) {
-        alert("good night!!")
+        alert("good night!!  Ი︵𐑼")
     } else {
         alert("please enter a valid value")
     };
@@ -79,7 +68,7 @@ function hi() {
 "Contiene la letra 'e'", si no, muestra "No contiene la letra 'e'". */
 
 function eee() {
-    let pali = prompt("por favor ingrese un email")
+    let pali = prompt("por favor ingrese una palabra")
 
     if (pali.includes("e")) {
         alert("contiene la letra e");
@@ -89,3 +78,13 @@ function eee() {
 }
 
 // la imagen xdddd
+
+const imag = document.querySelector("#mouse")
+mouse.addEventListener("mouseover", function() {
+    mouse.src = "static/images/clary.jpg";
+});
+
+// imagen al no tener el cursor encima
+mouse.addEventListener("mouseout", function() {
+    mouse.src = "static/images/Thebitty.jpg";
+});
