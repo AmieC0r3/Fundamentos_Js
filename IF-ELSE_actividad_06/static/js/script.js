@@ -12,8 +12,10 @@ function pala() {
     } else if (pal1.length == pal2.length) {
         alert(`tanto ${pal1} y ${pal2} tienen el mismo largo con:\n
             ${pal1.length} caracteres`);
-    } else {
-        alert("por favor ingrese un valor valido");
+    } else if ( pal1.length == "" || pal2.length == "" ){
+        alert("Por favor ingrese algun valor...");
+    } else{
+        alert("por favor ingrese algun valor ")
     };
 }
 
@@ -84,7 +86,6 @@ mouse.addEventListener("mouseover", function() {
     mouse.src = "static/images/clary.jpg";
 });
 
-// imagen al no tener el cursor encima
 mouse.addEventListener("mouseout", function() {
     mouse.src = "static/images/Thebitty.jpg";
 });
