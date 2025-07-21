@@ -20,11 +20,11 @@ function pala() {
         alert(`la palabra mas larga es ${pal1} con ${pal1.length}`);
     } else if (pal1.length < pal2.length) {
         alert(`la palabra mas larga es ${pal2} con ${pal2.length}`);
-    } else if (pal1.length == pal2.length){
+    } else if (pal1.length == pal2.length) {
         alert(`tanto ${pal1} y ${pal2} tienen el mismo largo con:\n
             ${pal1.length} caracteres`);
-    } else{
-        alert ("por favor ingrese un valor valido");
+    } else {
+        alert("por favor ingrese un valor valido");
     };
 }
 
@@ -35,9 +35,10 @@ function correo() {
     let email = prompt("por favor ingrese un email")
 
     if (email.includes("@gmail.com")) {
-        alert("correo valido");
+        alert(`ִ ࣪ ˖ ࣪ ᨰꫀᥣᥴ᥆ꩇꫀ ! ᰔ ִ ׄ : ${email}\n
+            disfuta de la pagina`);
     } else {
-        alert("por favor ingrese un correo valido");
+        alert("➺ Por favor ingrese un correo valido: somoneExample@gmail.com");
     };
 }
 
@@ -45,14 +46,14 @@ function correo() {
 
 function nume() {
     let num = parseInt(prompt("ingrese un numero"));
-    
-    if (num < 0 ){
+
+    if (num < 0) {
         alert("ese es un numero negativo");
-    } else if (num > 0){
+    } else if (num > 0) {
         alert("ese es un numero positivo");
     } else if (num === 0) {
         alert("ese es el cero");
-    }else {
+    } else {
         alert("ingrese un valor valido");
     };
 }
@@ -60,12 +61,12 @@ function nume() {
 /*Si es antes de las 12, muestra "Buenos días", si es entre 12 y 18,
 "Buenas tardes", y si es mayor a 18, "Buenas noches".*/
 
-function hi(){
+function hi() {
     let sal = parseInt(prompt("que hora es?"));
 
     if (sal < 12) {
         alert("good morning");
-    } else if( sal >= 12 && sal < 18) {
+    } else if (sal >= 12 && sal < 18) {
         alert("good afternoon");
     } else if (sal >= 18) {
         alert("good night!!")
@@ -86,3 +87,5 @@ function eee() {
         alert("no contiene e");
     };
 }
+
+// la imagen xdddd
