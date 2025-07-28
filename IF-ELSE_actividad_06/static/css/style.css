@@ -9,20 +9,32 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #dfffb1;
+    font-family: "Walter Turncoat", cursive;
 }
 
 h1 {
     margin: 10px;
-    font-family: "Walter Turncoat", cursive;
     color: #ae85e6;
 }
 
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    width: 800px;
+    margin: 0 auto;
+}
+
 .botones {
+    height: 250px;
     padding: 10px;
     border-radius: 20px;
     border: 2px dashed #70983d;
     font-family: "Homemade Apple", cursive;
     background-color: #cba8fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 button {
@@ -33,14 +45,15 @@ button {
     padding: 3px 5px;
 }
 
+button:hover {
+    background-color: #ae85e6;
+    color:#cba8fc;
+    border: 2px solid #ae85e6;
+}
+
 img {
     width: 450px;
     height: 450px;
     border-radius: 20px;
     border: 10px double #ae85e6;
-    margin: 20px;
-}
-
-main{
-    text-align: center;
 }

@@ -12,9 +12,9 @@ function pala() {
     } else if (pal1.length == pal2.length) {
         alert(`tanto ${pal1} y ${pal2} tienen el mismo largo con:\n
             ${pal1.length} caracteres`);
-    } else if ( pal1.length == "" || pal2.length == "" ){
+    } else if (pal1.length == "" || pal2.length == "") {
         alert("Por favor ingrese algun valor...");
-    } else{
+    } else {
         alert("por favor ingrese algun valor ")
     };
 }
@@ -39,11 +39,11 @@ function nume() {
     let num = parseInt(prompt("ingrese un numero"));
 
     if (num < 0) {
-        alert("ese es un numero negativo");
+        alert(`ese es un numero negativo ya que es MENOR a cero 0 > ${num}`);
     } else if (num > 0) {
-        alert("ese es un numero positivo");
+        alert(`ese es un numero positivo ya que es MAYOR a cero  0 < ${num}`);
     } else if (num === 0) {
-        alert("ese es el cero");
+        alert(`${num} ese es el cero`);
     } else {
         alert("ingrese un valor valido");
     };
@@ -56,24 +56,27 @@ function hi() {
     let sal = parseInt(prompt("Tu sabes que hora es?  ❤︎"));
 
     if (sal < 12) {
-        alert("good morning ꒰ᐢ.   ̫ .ᐢ꒱");
+        alert(`Ya que son las ${sal} hrs\n
+            Buenos diaaas꒰ᐢ.   ̫ .ᐢ꒱`);
     } else if (sal >= 12 && sal < 18) {
-        alert("good afternoon ᕙ( •̀ ᗜ •́ )ᕗ");
-    } else if (sal >= 18) {
-        alert("good night!!  Ი︵𐑼")
-    } else {
-        alert("please enter a valid value")
-    };
+        alert(`Ya que son las ${sal} hrs\n
+            Buenas tardees ᕙ( •̀ ᗜ •́ )ᕗ`);
+    } else if (sal >= 18 && sal <= 24) {
+        alert(`Ya que son las ${sal} hrs\n
+            Buenas Noches ᶻ 𝗓 𐰁 .ᐟ`);
+    } else{
+        alert("ingrese un valor valido");
+    }
 }
 
 /* Verifica si contiene la letra "e" (minúscula). Si la tiene, muestra
 "Contiene la letra 'e'", si no, muestra "No contiene la letra 'e'". */
 
 function eee() {
-    let pali = prompt("por favor ingrese una palabra")
+    let palabra = prompt("por favor ingrese una palabra")
 
-    if (pali.includes("e")) {
-        alert("contiene la letra e");
+    if (palabra.includes("e")) {
+        alert(`la palabra ${palabra} contiene la letra e ꩜ .ᐟ`);
     } else {
         alert("no contiene e");
     };
@@ -82,10 +85,10 @@ function eee() {
 // la imagen xdddd
 
 const imag = document.querySelector("#mouse")
-mouse.addEventListener("mouseover", function() {
+mouse.addEventListener("mouseover", function () {
     mouse.src = "static/images/clary.jpg";
 });
 
-mouse.addEventListener("mouseout", function() {
+mouse.addEventListener("mouseout", function () {
     mouse.src = "static/images/Thebitty.jpg";
 });
